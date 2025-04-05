@@ -1,0 +1,14 @@
+{
+   "compilerOptions": {
+     "outDir": "./dist",            // Output the JS files to the dist folder
+     "rootDir": "./src",            // Look for TS files in the src folder
+     "esModuleInterop": true,       // Enables compatibility for ES modules
+     "strict": true,                // Enable all strict type checking options
+     "module": "ESNext",            // Use ESNext module system (for modern browsers)
+     "target": "ES5",               // Target ES5 to support older browsers
+     "moduleResolution": "node"     // Resolve modules using Node.js resolution
+   },
+   "include": ["src/**/*.ts"],       // Include all TS files from the src folder
+   "exclude": ["node_modules"]       // Exclude node_modules
+ }
+ 
