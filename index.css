@@ -1,0 +1,26 @@
+.loader {
+  animation: fadeOut 1s ease-in-out 2s forwards;
+}
+
+.logo-animation {
+  animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
