@@ -8,7 +8,7 @@
      "moduleResolution": "node", // Resolves modules in a Node.js way
      "strict": true           // Enables strict type-checking
    },
-   "include": ["src/**/*.ts"], // Path to your TypeScript files
+   "include": ["src/**/*.ts", "src/index.js"], // Path to your TypeScript files
    "exclude": ["node_modules"]
  }
  
