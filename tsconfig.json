@@ -1,14 +1,14 @@
 {
    "compilerOptions": {
-     "outDir": "./dist",            // Output the JS files to the dist folder
-     "rootDir": "./src",            // Look for TS files in the src folder
-     "esModuleInterop": true,       // Enables compatibility for ES modules
-     "strict": true,                // Enable all strict type checking options
-     "module": "ESNext",            // Use ESNext module system (for modern browsers)
-     "target": "ES5",               // Target ES5 to support older browsers
-     "moduleResolution": "node"     // Resolve modules using Node.js resolution
+     "module": "ESNext",      // Keeps ES module imports/exports
+     "target": "ES6",         // Compiles to modern JavaScript
+     "esModuleInterop": true, // Ensures compatibility with CommonJS modules
+     "outDir": "./dist",      // Where compiled JS files go
+     "rootDir": "./src",      // Source folder for TypeScript files
+     "moduleResolution": "node", // Resolves modules in a Node.js way
+     "strict": true           // Enables strict type-checking
    },
-   "include": ["src/**/*.ts"],       // Include all TS files from the src folder
-   "exclude": ["node_modules"]       // Exclude node_modules
+   "include": ["src/**/*.ts"], // Path to your TypeScript files
+   "exclude": ["node_modules"]
  }
  
