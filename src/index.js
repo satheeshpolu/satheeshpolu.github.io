@@ -1,3 +1,5 @@
+// const { resources } = require('./translations.js');
+
 // Initialize language switcher
 document.addEventListener("DOMContentLoaded", function () {
   // Show loading
@@ -87,28 +89,29 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // Initialize i18next with German as default
-  // i18next.init(
-  //   {
-  //     lng: "de",
-  //     resources: resources,
-  //   },
-  //   function (err, t) {
-  //     updateContent();
-  //   }
-  // );
+  i18next.init(
+    {
+      lng: "de",
+      resources: resources,
+    },
+    function (err, t) {
+      updateContent();
+    }
+  );
 
   // Add data-i18n attributes to elements
-  const aboutElement = document.querySelector('a[href="#about"]');
-  const projectsElement = document.querySelector('a[href="#projects"]');
-  const skillsElement = document.querySelector('a[href="#skills"]');
-  const contactElement = document.querySelector('a[href="#contact"]');
-  const jobTitleElement = document.querySelector('.text-gray-600');
+  const aboutElement = document.querySelectorAll('.about');
+  const projectsElement = document.querySelectorAll('.projects');
+  const skillsElement = document.querySelectorAll('.skills');
+  const contactElement = document.querySelectorAll('.contact');
+  const jobTitleElement = document.querySelector('.job-title');
   const downloadElement = document.querySelector('span[download]');
 
-  if (aboutElement) aboutElement.setAttribute("data-i18n", "about");
-  if (projectsElement) projectsElement.setAttribute("data-i18n", "projects");
-  if (skillsElement) skillsElement.setAttribute("data-i18n", "skills");
-  if (contactElement) contactElement.setAttribute("data-i18n", "contact");
+  aboutElement.forEach(el => el.setAttribute("data-i18n", "about"))
+  projectsElement.forEach(el => el.setAttribute("data-i18n", "projects"))
+  skillsElement.forEach(el => el.setAttribute("data-i18n", "skills"))
+  contactElement.forEach(el => el.setAttribute("data-i18n", "contact"))
+
   if (jobTitleElement) jobTitleElement.setAttribute("data-i18n", "job-title");
   if (downloadElement) downloadElement.setAttribute("data-i18n", "download");
 
