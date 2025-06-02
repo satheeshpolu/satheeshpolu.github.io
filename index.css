@@ -6,6 +6,11 @@
   animation: pulse 1.5s infinite alternate;
 }
 
+img {
+  border: 3px solid;
+  border-color: rgb(171 187 244);
+}
+
 @keyframes fadeOut {
   from {
     opacity: 1;
