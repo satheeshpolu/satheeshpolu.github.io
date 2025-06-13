@@ -1,816 +1,523 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link href="./index.css" rel="stylesheet" />
-  </head>
-  <body class="bg-gray-100">
-    <!-- Loading Screen -->
-    <div
-      class="loader fixed inset-0 bg-indigo-900 flex items-center justify-center z-50"
-    >
-      <div class="text-center">
-        <div class="logo-animation text-white text-6xl font-bold mb-4">
-          Polu
-        </div>
-        <div
-          class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-white border-r-transparent"
-        ></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="./index.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+  <!-- Loading Screen -->
+  <div class="loader fixed inset-0 bg-indigo-900 flex items-center justify-center z-50">
+    <div class="text-center">
+      <div class="logo-animation text-white text-6xl font-bold mb-4">
+        Polu
+      </div>
+      <div
+        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-solid border-white border-r-transparent">
       </div>
     </div>
+  </div>
 
-    <!-- Rest of your website content -->
-    <div id="content" class="invisible-delete">
-      <div class="flex flex-col min-h-screen">
-        <!-- Main Content Area -->
-        <div class="flex flex-col md:flex-row flex-grow">
-          <!-- Content -->
-          <main class="flex-grow p-6 md:w-3/4">
-            <!-- About Me -->
-            <section id="about" class="mb-16">
-              <h2 class="text-3xl font-bold mb-6"><span class="about">About Me</span></h2>
-              <div class="bg-white p-6 rounded-lg shadow-md" class="about_description">
-                
-                <div class="space-y-6">
-                  <p class="text-lg">
-                    Hello, 👋<br> mit 12 Jahren Erfahrung in den Bereichen Web, mobile Entwicklung (iOS/Android) und Backend hatte ich die Gelegenheit, in verschiedenen Phasen des Software Development Life Cycle (SDLC) zu arbeiten. Von Projekten auf der grünen Wiese bis hin zur Produktentwicklung und dem Refactoring von Altsystemen habe ich meine Fähigkeiten in einer breiten Palette von Technologien verfeinert und bin dabei immer bestrebt, der Zeit voraus zu sein.
-                  </p>
-                
-                  <p class="text-lg">
-In meiner Karriere habe ich mich nicht nur auf die technische Entwicklung konzentriert, sondern auch eng mit funktionsübergreifenden Teams zusammengearbeitet - mit UX-, Backend- und Produktteams, um User Stories zu erstellen, Stand-up-Meetings zu leiten und Kollegen zu beraten. Ich fühle mich in dynamischen, schnelllebigen Umgebungen wohl, in denen ich die Verantwortung für Aufgaben übernehmen und zu den übergeordneten Zielen des Unternehmens beitragen kann, um sicherzustellen, dass wir den Kunden einen sinnvollen Mehrwert bieten.                  </p>
-                
-                  <p class="text-lg">
-My approach is driven by a passion for continuous learning and a desire to apply my skills to solve complex problems. This portfolio reflects both the work I’ve done and the approach I take to every project: to learn, adapt, and contribute effectively.                  </p>
-                </div>
-                
-              </div>
-            </section>
-
-            <section id="skills" class="mb-16">
-              <h2 class="text-3xl font-bold mb-6"><span class="skills">Skills</span></h2>
-              <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <!-- Frontend Skills -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                  <div class="flex items-center mb-4">
-                    <svg
-                      class="h-6 w-6 text-indigo-600 mr-2"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <h3 class="text-xl font-bold text-gray-800">Frontend</h3>
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >VueJS, EmberJS, Angular 12</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >JavaScript, TypeScript</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Tailwind CSS</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Web Components, jQuery, JQX Widget</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >SAP-UI5, FIORI, Bootstrap</span
-                    >
-                  </div>
-                </div>
-
-                <!-- Backend Skills -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                  <div class="flex items-center mb-4">
-                    <svg
-                      class="h-6 w-6 text-indigo-600 mr-2"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <h3 class="text-xl font-bold text-gray-800">Backend</h3>
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Ruby on Rails</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >NodeJS, ExpressJS</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Java + Spring Boot</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >GraphQL</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >PostgreSQL</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >MongoDB</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >RESTful APIs</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Microservices</span
-                    >
-                  </div>
-                </div>
-
-                <!-- Tools & Emerging Tech -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                  <div class="flex items-center mb-4">
-                    <svg
-                      class="h-6 w-6 text-indigo-600 mr-2"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-                        clip-rule="evenodd"
-                      ></path>
-                    </svg>
-                    <h3 class="text-xl font-bold text-gray-800">
-                      Tools & Test Libraries
-                    </h3>
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Jest(TDD), QUnit</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Cypress(E2E), Cucumber(BDD)</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >RSpec</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Git/GitHub Actions</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Docker</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >CI/CD Pipelines</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Web3/Blockchain</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Miro, Figma</span
-                    >
-                  </div>
-                </div>
+  <!-- Rest of your website content -->
+  <div id="content" class="invisible-delete">
+    <div class="flex flex-col min-h-screen">
+      <!-- Main Content Area -->
+      <div class="flex flex-col md:flex-row flex-grow">
+        <!-- Content -->
+        <main class="flex-grow p-6 md:w-3/4">
+          <!-- About Me -->
+          <section id="about" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6"><span class="about">About Me</span></h2>
+            <div class="bg-white p-6 rounded-lg shadow-md" class="about_description">
+              <!-- Snackbar Container -->
+              <div id="snackbar"
+                class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-md shadow-lg opacity-0 pointer-events-none transition-opacity duration-300">
+                Vielen Dank für Ihren Besuch! Viel Spaß beim Erkunden meines Portfolios.
               </div>
 
-              <!-- Additional Skills Categories -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                <!-- Mobile Development -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                  <div class="flex items-center mb-4">
-                    <svg
-                      class="h-6 w-6 text-indigo-600 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                      ></path>
-                    </svg>
-                    <h3 class="text-xl font-bold text-gray-800">
-                      Mobile Development
-                    </h3>
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >React Native(IOS & Android)</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >RN-Elements, RN-Material, Ant Design</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Redux, RN Custom hooks</span
-                    >
-                  </div>
-                </div>
-
-                <!-- DevOps & Cloud -->
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                  <div class="flex items-center mb-4">
-                    <svg
-                      class="h-6 w-6 text-indigo-600 mr-2"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                      ></path>
-                    </svg>
-                    <h3 class="text-xl font-bold text-gray-800">
-                      DevOps & Cloud
-                    </h3>
-                  </div>
-                  <div class="flex flex-wrap gap-2">
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >AWS</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Serverless</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >CI/CD</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Kubernetes</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Docker</span
-                    >
-                    <span
-                      class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium"
-                      >Monitoring</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </section>
-            
-            <section id="projects" class="mb-16">
-              <h2 class="text-3xl font-bold mb-6"><span class="projects">Projects</span></h2>
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Project 1: AI-Enhanced Mobile App -->
-                <div
-                  class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1"
-                >
-                  <div
-                    class="h-52 bg-gradient-to-r from-blue-500 to-indigo-600 p-6 flex items-center justify-center"
-                  >
-                    <!-- React Native Icon -->
-                    <svg
-                      viewBox="0 0 24 24"
-                      class="h-24 w-24 text-white opacity-90"
-                    >
-                      <g fill="currentColor">
-                        <path
-                          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="p-6">
-                    <div class="flex items-center justify-between mb-3">
-                      <h3 class="text-xl font-bold text-gray-800">
-                        Github Projects
-                      </h3>
-                      <span
-                        class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full font-semibold"
-                        >Hobby projects</span
-                      >
-                    </div>
-
-                    <p class="text-gray-600 mb-6">
-                      My personal activities pursued for fun, creativity, and learning. <br>✍️📖✨
-                    </p>
-
-                    <div class="flex justify-between">
-                      <a
-                        href="#"
-                        class="text-gray-500 hover:text-gray-500 font-medium flex items-center cursor-not-allowed pointer-events-none"
-                        >
-                        <span>View Demo</span>
-                        <svg
-                          class="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://github.com/satheeshpolu"
-                        target="_blank"
-                        class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors"
-                      >
-                        <span>Source Code</span>
-                        <svg
-                          class="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Project 2: Next.js Web App -->
-                <div
-                  class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1"
-                >
-                  <div
-                    class="h-52 bg-gradient-to-r from-gray-900 to-gray-700 p-6 flex items-center justify-center"
-                  >
-                    <!-- Next.js Icon -->
-                    <svg
-                      viewBox="0 0 24 24"
-                      class="h-24 w-24 text-white opacity-90"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4–1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7–3a1 1 0 000–1.838l-7–3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00–1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25–3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508–2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00–5.35 2.524 1 1 0 01–1.4 0zM6 18a1 1 0 001–1v-2.065a8.935 8.935 0 00–2-.712V17a1 1 0 001 1z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="p-6">
-                    <div class="flex items-center justify-between mb-3">
-                      <h3 class="text-xl font-bold text-gray-800">
-                        E-commerce Platform
-                      </h3>
-                      <span
-                        class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full font-semibold"
-                        >Live</span
-                      >
-                    </div>
-
-                    <p class="text-gray-600 mb-6">
-                      Developed an e-commerce platform using Angular (NG 8), featuring a responsive UI, product management, and seamless user experience.
-                    </p>
-
-                    <div class="flex justify-between">
-                      <a
-                        href="https://cart-orders.firebaseapp.com/men/sneakers"
-                        target="_blank"
-                        class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors"
-                      >
-                        <span>View Demo</span>
-                        <svg
-                          class="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://github.com/mygithub-2019/ng-8-my-cart"
-                        target="_blank"
-                        class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors"
-                      >
-                        <span>Source Code</span>
-                        <svg
-                          class="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Project 3: Ruby on Rails SaaS Platform -->
-                <div
-                  class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1"
-                >
-                  <div
-                    class="h-52 bg-gradient-to-r from-red-600 to-pink-600 p-6 flex items-center justify-center"
-                  >
-                    <!-- Ruby on Rails Icon -->
-                    <svg
-                      viewBox="0 0 24 24"
-                      class="h-24 w-24 text-white opacity-90"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M20.156 7.762c-1.351-3.746-4.672-5.297-4.758-5.334-.365-.044-.729.193-.774.557-.045.36.192.724.559.769 0 0 2.946 1.322 4.152 4.597 1.209 3.271 1.395 8.727 1.395 8.727.013.364.333.633.696.633.02 0 .039 0 .059-.002.385-.015.658-.379.644-.765-.002-.024-.184-5.636-1.973-9.182M10.163 5.465c-.732-1.376-1.459-2.058-1.54-2.123-.309-.239-.74-.183-.978.126-.241.31-.184.738.126.98.012.01.667.622 1.313 1.858.742 1.423 1.169 3.02 1.169 4.373 0 2.098-.45 3.601-.458 3.629-.092.376.13.765.505.857.057.014.114.021.171.021.316 0 .598-.225.676-.541.016-.068.519-1.748.519-3.966 0-1.658-.481-3.508-1.403-5.214m-7.344.172c.218-.323.12-.747-.202-.966-.326-.216-.747-.12-.966.2-.583.866-1.354 2.293-1.354 4.445 0 2.034.802 6.656.802 6.656.099.369.48.576.849.477.368-.099.576-.48.476-.848 0 0-.76-4.361-.76-6.285 0-1.773.605-2.871 1.155-3.679m10.304 3.386c-.527 0-.954.428-.954.955 0 .526.427.954.954.954.526 0 .954-.428.954-.954 0-.527-.428-.955-.954-.955m-5.642 0c-.526 0-.954.428-.954.955 0 .526.427.954.954.954.527 0 .955-.428.955-.954 0-.527-.429-.955-.955-.955m10.497 7.02c-.511-.19-1.261-.422-1.261-1.371 0-.704.421-1.187.794-1.439.254-.167.453-.44.454-.711 0-.274-.2-.548-.454-.714-.028-.018-2.785-1.761-7.762-1.761-4.979 0-7.737 1.743-7.764 1.762-.254.166-.454.44-.454.713 0 .271.2.546.454.712.374.253.794.736.794 1.439 0 .948-.749 1.18-1.262 1.37-.385.144-.637.493-.637.889 0 .394.252.741.636.885.541.202 1.194.434 1.336 1.151.096.485.57.828 1.095.828h.003c.479 0 .904-.285 1.061-.722.845-2.353 3.102-3.686 5.739-3.686 2.557 0 4.771 1.284 5.681 3.557.16.458.585.77 1.117.77h.003c.492 0 .916-.284 1.08-.714.238-.632.872-.875 1.352-1.078.385-.145.637-.493.637-.889s-.252-.745-.639-.89"
-                      />
-                    </svg>
-                  </div>
-                  <div class="p-6">
-                    <div class="flex items-center justify-between mb-3">
-                      <h3 class="text-xl font-bold text-gray-800">
-                        Open-Source npm Package(Code Once, Use Everywhere)
-                      </h3>
-                      <span
-                       class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full font-semibold"
-                        >Live</span
-                      >
-                    </div>
-
-                    <p class="text-gray-600 mb-6">
-                      Created a reusable npm package published to the world's largest software registry, enabling code sharing and reuse in open-source and private projects.
-                    </p>
-
-                    <div class="flex justify-between">
-                      <a
-                        href="https://www.npmjs.com/package/@satheeshpolu/utils-package"
-                        target="_blank"
-                        class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors"
-                      >
-                        <span>View Demo</span>
-                        <svg
-                          class="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://github.com/satheeshpolu/utils-package"
-                        target="_blank"
-                        class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors"
-                      >
-                        <span>Source Code</span>
-                        <svg
-                          class="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Project 4: API Integration Platform -->
-                <div
-                  class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1"
-                >
-                  <div
-                    class="h-52 bg-gradient-to-r from-green-500 to-teal-600 p-6 flex items-center justify-center"
-                  >
-                    <!-- API/Integration Icon -->
-                    <svg
-                      viewBox="0 0 24 24"
-                      class="h-24 w-24 text-white opacity-90"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="M16.5 12c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L22 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5M5.91 18H7v1a2 2 0 0 0 2 2h1v-2H9v-1h1c1.07 0 2-.93 2-2v-1H9a2 2 0 0 0-2 2v1h-.09c-.55 0-1.05-.2-1.42-.56-.38-.36-.59-.87-.59-1.44 0-1.13.9-2 2-2H8V9H7c-2.21 0-4 1.79-4 4 0 2.21 1.29 4 2.91 5M7 4v2h3v2H8c-1.1 0-2 .9-2 2v2h5v-2H9V8h1c1.1 0 2-.9 2-2V4Z"
-                      />
-                    </svg>
-                  </div>
-                  <div class="p-6">
-                    <div class="flex items-center justify-between mb-3">
-                      <h3 class="text-xl font-bold text-gray-800">
-                        MS-SQL + NodeJS + ExpressJS + REST API + GraphQL
-                      </h3>
-                      <span
-                        class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full font-semibold"
-                        >New</span
-                      >
-                    </div>
-
-                    <p class="text-gray-600 mb-6">
-                      Built a project using MSSQL, ExpressJS, with both REST API and GraphQL for flexible data querying and efficient backend management.
-                    </p>
-
-                      <div class="flex justify-between">
-                        <a
-                        href="#"
-                        class="text-gray-500 hover:text-gray-500 font-medium flex items-center cursor-not-allowed pointer-events-none"
-                      >
-                        <span>View Demo</span>
-                        <svg
-                          class="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </a>
-                      <a
-                        href="https://github.com/satheeshpolu/backend-application"
-                        target="_blank"
-                        class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors"
-                      >
-                        <span>Source Code</span>
-                        <svg
-                          class="w-4 h-4 ml-1"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            <!-- Contact -->
-            <section id="contact" class="mb-16">
-              <h2 class="text-3xl font-bold mb-6"><span class="contact">Contact</span></h2>
-              <div class="bg-white p-6 rounded-lg shadow-md">
-                <p class="text-gray-700 mb-6">
-                  Haben Sie ein Projekt im Sinn oder möchten Sie eine mögliche Zusammenarbeit besprechen? Ich würde mich freuen, von Ihnen zu hören! Füllen Sie das untenstehende Formular aus oder kontaktieren Sie mich über einen meiner Social-Media-Kanäle.
+              <div class="space-y-6">
+                <p class="text-lg">
+                  Hello, 👋<br> mit 12 Jahren Erfahrung in den Bereichen Web, mobile Entwicklung (iOS/Android) und
+                  Backend hatte ich die Gelegenheit, in verschiedenen Phasen des Software Development Life Cycle (SDLC)
+                  zu arbeiten. Von Projekten auf der grünen Wiese bis hin zur Produktentwicklung und dem Refactoring von
+                  Altsystemen habe ich meine Fähigkeiten in einer breiten Palette von Technologien verfeinert und bin
+                  dabei immer bestrebt, der Zeit voraus zu sein.
                 </p>
 
-                <form class="space-y-4">
-                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label
-                        for="name"
-                        class="block text-sm font-medium text-gray-700 mb-1"
-                        >Name</label
-                      >
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="email"
-                        class="block text-sm font-medium text-gray-700 mb-1"
-                        >Email</label
-                      >
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                      />
-                    </div>
-                  </div>
+                <p class="text-lg">
+                  In meiner Karriere habe ich mich nicht nur auf die technische Entwicklung konzentriert, sondern auch
+                  eng mit funktionsübergreifenden Teams zusammengearbeitet - mit UX-, Backend- und Produktteams, um User
+                  Stories zu erstellen, Stand-up-Meetings zu leiten und Kollegen zu beraten. Ich fühle mich in
+                  dynamischen, schnelllebigen Umgebungen wohl, in denen ich die Verantwortung für Aufgaben übernehmen
+                  und zu den übergeordneten Zielen des Unternehmens beitragen kann, um sicherzustellen, dass wir den
+                  Kunden einen sinnvollen Mehrwert bieten. </p>
 
-                  <div>
-                    <label
-                      for="subject"
-                      class="block text-sm font-medium text-gray-700 mb-1"
-                      >Subject</label
-                    >
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    />
-                  </div>
-
-                  <div>
-                    <label
-                      for="message"
-                      class="block text-sm font-medium text-gray-700 mb-1"
-                      >Message</label
-                    >
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="4"
-                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-                    ></textarea>
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition"
-                  >
-                    Send Message
-                  </button>
-                </form>
-              </div>
-            </section>
-          </main>
-
-          <!-- Right Sidebar -->
-          <aside class="md:w-1/4 p-6 bg-white shadow-md">
-            <div class="sticky top-6">
-              <div class="text-center mb-8">
-
-                <div class="mb-4 relative">
-                  <div class="flex items-center justify-center mb-4">
-                    <span id="en-label" class="mr-2 text-sm font-medium text-gray-400">EN</span>
-                    <button id="langToggle" class="relative inline-flex h-6 w-11 items-center rounded-full bg-indigo-100">
-                      <span id="langSlider" class="absolute h-4 w-4 transform rounded-full bg-indigo-600 transition-all duration-200" style="right: 4px;"></span>
-                    </button>
-                    <span id="de-label" class="ml-2 text-sm font-medium text-indigo-600">DE</span>
-                  </div>
-                </div>
-                  <!-- Profile Image -->
-                  <div class="relative w-32 h-32 mx-auto">
-                  <img
-                    src="./assets/pic.jpeg"
-                    alt="Profile Image"
-                    class="rounded-full w-32 h-32 profile-img"
-                  />
-                  <span class="absolute bottom-0 right-0 bg-indigo-100 text-indigo-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-indigo-300 shadow-md animate-pulse" style="right: 5px;" >
-                    🙋‍♂️ Open to Work
-                  </span>
-                </div>
-
-
-                <h2 class="text-2xl font-bold profile-title">Satheesh Polu</h2>
-                <p class="text-gray-600 job-title">Web/Mobile(Android/IOS) Developer</p>
+                <p class="text-lg">
+                  My approach is driven by a passion for continuous learning and a desire to apply my skills to solve
+                  complex problems. This portfolio reflects both the work I’ve done and the approach I take to every
+                  project: to learn, adapt, and contribute effectively. </p>
               </div>
 
-              
-              
-                <ul>
-                  <li class="mb-3">
-                    <a
-                      href="#about"
-                      class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"
-                      ><span class="about">About Me</span></a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a
-                      href="#skills"
-                      class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"
-                      ><span class="skills">Skills</span></a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a
-                      href="#projects"
-                      class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"
-                      ><span class="projects">Projects</span></a
-                    >
-                  </li>
-                  <li class="mb-3">
-                    <a
-                      href="#contact"
-                      class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"
-                      ><span class="contact">Contact</span></a
-                    >
-                  </li>
-                </ul>
-              </nav>
+            </div>
+          </section>
 
-              <div class="space-y-4">
-                <a
-                  href="./assets/Curriculum_Vitae_POLU.pdf"
-                  target="_blank"
-                  class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition flex items-center justify-center"
-                >
-                  <svg
-                    class="h-5 w-5 mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                    ></path>
+          <section id="skills" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6"><span class="skills">Skills</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- Frontend Skills -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                  <svg class="h-6 w-6 text-indigo-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+                      clip-rule="evenodd"></path>
                   </svg>
-                  <span download>Download CV</span>
+                  <h3 class="text-xl font-bold text-gray-800">Frontend</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">VueJS, EmberJS,
+                    Angular 12</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">JavaScript,
+                    TypeScript</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Tailwind
+                    CSS</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Web Components,
+                    jQuery, JQX Widget</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">SAP-UI5, FIORI,
+                    Bootstrap</span>
+                </div>
+              </div>
+
+              <!-- Backend Skills -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                  <svg class="h-6 w-6 text-indigo-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 01-1.414-1.414L7.586 10 5.293 7.707a1 1 0 010-1.414zM11 12a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <h3 class="text-xl font-bold text-gray-800">Backend</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Ruby on
+                    Rails</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">NodeJS,
+                    ExpressJS</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Java + Spring
+                    Boot</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">GraphQL</span>
+                  <span
+                    class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">PostgreSQL</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">MongoDB</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">RESTful
+                    APIs</span>
+                  <span
+                    class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Microservices</span>
+                </div>
+              </div>
+
+              <!-- Tools & Emerging Tech -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                  <svg class="h-6 w-6 text-indigo-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Tools & Test Libraries
+                  </h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Jest(TDD),
+                    QUnit</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Cypress(E2E),
+                    Cucumber(BDD)</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">RSpec</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Git/GitHub
+                    Actions</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Docker</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">CI/CD
+                    Pipelines</span>
+                  <span
+                    class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Web3/Blockchain</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Miro,
+                    Figma</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Skills Categories -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+              <!-- Mobile Development -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                  <svg class="h-6 w-6 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                  </svg>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    Mobile Development
+                  </h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">React
+                    Native(IOS & Android)</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">RN-Elements,
+                    RN-Material, Ant Design</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Redux, RN
+                    Custom hooks</span>
+                </div>
+              </div>
+
+              <!-- DevOps & Cloud -->
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-center mb-4">
+                  <svg class="h-6 w-6 text-indigo-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10">
+                    </path>
+                  </svg>
+                  <h3 class="text-xl font-bold text-gray-800">
+                    DevOps & Cloud
+                  </h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">AWS</span>
+                  <span
+                    class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Serverless</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">CI/CD</span>
+                  <span
+                    class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Kubernetes</span>
+                  <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Docker</span>
+                  <span
+                    class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">Monitoring</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="projects" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6"><span class="projects">Projects</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Project 1: AI-Enhanced Mobile App -->
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="h-52 bg-gradient-to-r from-blue-500 to-indigo-600 p-6 flex items-center justify-center">
+                  <!-- React Native Icon -->
+                  <svg viewBox="0 0 24 24" class="h-24 w-24 text-white opacity-90">
+                    <g fill="currentColor">
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </g>
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-xl font-bold text-gray-800">
+                      Github Projects
+                    </h3>
+                    <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full font-semibold">Hobby
+                      projects</span>
+                  </div>
+
+                  <p class="text-gray-600 mb-6">
+                    My personal activities pursued for fun, creativity, and learning. <br>✍️📖✨
+                  </p>
+
+                  <div class="flex justify-between">
+                    <a href="#"
+                      class="text-gray-500 hover:text-gray-500 font-medium flex items-center cursor-not-allowed pointer-events-none">
+                      <span>View Demo</span>
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <a href="https://github.com/satheeshpolu" target="_blank"
+                      class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors">
+                      <span>Source Code</span>
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2: Next.js Web App -->
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="h-52 bg-gradient-to-r from-gray-900 to-gray-700 p-6 flex items-center justify-center">
+                  <!-- Next.js Icon -->
+                  <svg viewBox="0 0 24 24" class="h-24 w-24 text-white opacity-90">
+                    <path fill="currentColor"
+                      d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4–1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7–3a1 1 0 000–1.838l-7–3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00–1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25–3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508–2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00–5.35 2.524 1 1 0 01–1.4 0zM6 18a1 1 0 001–1v-2.065a8.935 8.935 0 00–2-.712V17a1 1 0 001 1z" />
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-xl font-bold text-gray-800">
+                      E-commerce Platform
+                    </h3>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full font-semibold">Live</span>
+                  </div>
+
+                  <p class="text-gray-600 mb-6">
+                    Developed an e-commerce platform using Angular (NG 8), featuring a responsive UI, product
+                    management, and seamless user experience.
+                  </p>
+
+                  <div class="flex justify-between">
+                    <a href="https://cart-orders.firebaseapp.com/men/sneakers" target="_blank"
+                      class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors">
+                      <span>View Demo</span>
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <a href="https://github.com/mygithub-2019/ng-8-my-cart" target="_blank"
+                      class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors">
+                      <span>Source Code</span>
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 3: Ruby on Rails SaaS Platform -->
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="h-52 bg-gradient-to-r from-red-600 to-pink-600 p-6 flex items-center justify-center">
+                  <!-- Ruby on Rails Icon -->
+                  <svg viewBox="0 0 24 24" class="h-24 w-24 text-white opacity-90">
+                    <path fill="currentColor"
+                      d="M20.156 7.762c-1.351-3.746-4.672-5.297-4.758-5.334-.365-.044-.729.193-.774.557-.045.36.192.724.559.769 0 0 2.946 1.322 4.152 4.597 1.209 3.271 1.395 8.727 1.395 8.727.013.364.333.633.696.633.02 0 .039 0 .059-.002.385-.015.658-.379.644-.765-.002-.024-.184-5.636-1.973-9.182M10.163 5.465c-.732-1.376-1.459-2.058-1.54-2.123-.309-.239-.74-.183-.978.126-.241.31-.184.738.126.98.012.01.667.622 1.313 1.858.742 1.423 1.169 3.02 1.169 4.373 0 2.098-.45 3.601-.458 3.629-.092.376.13.765.505.857.057.014.114.021.171.021.316 0 .598-.225.676-.541.016-.068.519-1.748.519-3.966 0-1.658-.481-3.508-1.403-5.214m-7.344.172c.218-.323.12-.747-.202-.966-.326-.216-.747-.12-.966.2-.583.866-1.354 2.293-1.354 4.445 0 2.034.802 6.656.802 6.656.099.369.48.576.849.477.368-.099.576-.48.476-.848 0 0-.76-4.361-.76-6.285 0-1.773.605-2.871 1.155-3.679m10.304 3.386c-.527 0-.954.428-.954.955 0 .526.427.954.954.954.526 0 .954-.428.954-.954 0-.527-.428-.955-.954-.955m-5.642 0c-.526 0-.954.428-.954.955 0 .526.427.954.954.954.527 0 .955-.428.955-.954 0-.527-.429-.955-.955-.955m10.497 7.02c-.511-.19-1.261-.422-1.261-1.371 0-.704.421-1.187.794-1.439.254-.167.453-.44.454-.711 0-.274-.2-.548-.454-.714-.028-.018-2.785-1.761-7.762-1.761-4.979 0-7.737 1.743-7.764 1.762-.254.166-.454.44-.454.713 0 .271.2.546.454.712.374.253.794.736.794 1.439 0 .948-.749 1.18-1.262 1.37-.385.144-.637.493-.637.889 0 .394.252.741.636.885.541.202 1.194.434 1.336 1.151.096.485.57.828 1.095.828h.003c.479 0 .904-.285 1.061-.722.845-2.353 3.102-3.686 5.739-3.686 2.557 0 4.771 1.284 5.681 3.557.16.458.585.77 1.117.77h.003c.492 0 .916-.284 1.08-.714.238-.632.872-.875 1.352-1.078.385-.145.637-.493.637-.889s-.252-.745-.639-.89" />
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-xl font-bold text-gray-800">
+                      Open-Source npm Package(Code Once, Use Everywhere)
+                    </h3>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full font-semibold">Live</span>
+                  </div>
+
+                  <p class="text-gray-600 mb-6">
+                    Created a reusable npm package published to the world's largest software registry, enabling code
+                    sharing and reuse in open-source and private projects.
+                  </p>
+
+                  <div class="flex justify-between">
+                    <a href="https://www.npmjs.com/package/@satheeshpolu/utils-package" target="_blank"
+                      class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors">
+                      <span>View Demo</span>
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <a href="https://github.com/satheeshpolu/utils-package" target="_blank"
+                      class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors">
+                      <span>Source Code</span>
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 4: API Integration Platform -->
+              <div
+                class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition transform hover:-translate-y-1">
+                <div class="h-52 bg-gradient-to-r from-green-500 to-teal-600 p-6 flex items-center justify-center">
+                  <!-- API/Integration Icon -->
+                  <svg viewBox="0 0 24 24" class="h-24 w-24 text-white opacity-90">
+                    <path fill="currentColor"
+                      d="M16.5 12c2.5 0 4.5 2 4.5 4.5 0 .88-.25 1.71-.69 2.4l3.08 3.1L22 23.39l-3.12-3.07c-.69.43-1.51.68-2.38.68-2.5 0-4.5-2-4.5-4.5s2-4.5 4.5-4.5m0 2a2.5 2.5 0 0 0-2.5 2.5 2.5 2.5 0 0 0 2.5 2.5 2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5M5.91 18H7v1a2 2 0 0 0 2 2h1v-2H9v-1h1c1.07 0 2-.93 2-2v-1H9a2 2 0 0 0-2 2v1h-.09c-.55 0-1.05-.2-1.42-.56-.38-.36-.59-.87-.59-1.44 0-1.13.9-2 2-2H8V9H7c-2.21 0-4 1.79-4 4 0 2.21 1.29 4 2.91 5M7 4v2h3v2H8c-1.1 0-2 .9-2 2v2h5v-2H9V8h1c1.1 0 2-.9 2-2V4Z" />
+                  </svg>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between mb-3">
+                    <h3 class="text-xl font-bold text-gray-800">
+                      MS-SQL + NodeJS + ExpressJS + REST API + GraphQL
+                    </h3>
+                    <span class="px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full font-semibold">New</span>
+                  </div>
+
+                  <p class="text-gray-600 mb-6">
+                    Built a project using MSSQL, ExpressJS, with both REST API and GraphQL for flexible data querying
+                    and efficient backend management.
+                  </p>
+
+                  <div class="flex justify-between">
+                    <a href="#"
+                      class="text-gray-500 hover:text-gray-500 font-medium flex items-center cursor-not-allowed pointer-events-none">
+                      <span>View Demo</span>
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                    <a href="https://github.com/satheeshpolu/backend-application" target="_blank"
+                      class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center transition-colors">
+                      <span>Source Code</span>
+                      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact -->
+          <section id="contact" class="mb-16">
+            <h2 class="text-3xl font-bold mb-6"><span class="contact">Contact</span></h2>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <p class="text-gray-700 mb-6">
+                Haben Sie ein Projekt im Sinn oder möchten Sie eine mögliche Zusammenarbeit besprechen? Ich würde mich
+                freuen, von Ihnen zu hören! Füllen Sie das untenstehende Formular aus oder kontaktieren Sie mich über
+                einen meiner Social-Media-Kanäle.
+              </p>
+
+              <form class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" id="name" name="name"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                  </div>
+                  <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" name="email"
+                      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                  <input type="text" id="subject" name="subject"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                  <textarea id="message" name="message" rows="4"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                </div>
+
+                <button type="submit"
+                  class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-md hover:bg-indigo-700 transition">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </section>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="md:w-1/4 p-6 bg-white shadow-md">
+          <div class="sticky top-6">
+            <div class="text-center mb-8">
+
+              <div class="mb-4 relative">
+                <div class="flex items-center justify-center mb-4">
+                  <span id="en-label" class="mr-2 text-sm font-medium text-gray-400">EN</span>
+                  <button id="langToggle" class="relative inline-flex h-6 w-11 items-center rounded-full bg-indigo-100">
+                    <span id="langSlider"
+                      class="absolute h-4 w-4 transform rounded-full bg-indigo-600 transition-all duration-200"
+                      style="right: 4px;"></span>
+                  </button>
+                  <span id="de-label" class="ml-2 text-sm font-medium text-indigo-600">DE</span>
+                </div>
+              </div>
+              <!-- Profile Image -->
+              <div class="relative w-32 h-32 mx-auto">
+                <img src="./assets/pic.jpeg" alt="Profile Image" class="rounded-full w-32 h-32 profile-img" />
+                <span
+                  class="absolute bottom-0 right-0 bg-indigo-100 text-indigo-800 text-xs font-semibold px-2 py-0.5 rounded-full border border-indigo-300 shadow-md animate-pulse"
+                  style="right: 5px;">
+                  🙋‍♂️ Open to Work
+                </span>
+              </div>
+
+
+              <h2 class="text-2xl font-bold profile-title">Satheesh Polu</h2>
+              <p class="text-gray-600 job-title">Web/Mobile(Android/IOS) Developer</p>
+            </div>
+
+
+
+            <ul>
+              <li class="mb-3">
+                <a href="#about" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
+                    class="about">About Me</span></a>
+              </li>
+              <li class="mb-3">
+                <a href="#skills" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
+                    class="skills">Skills</span></a>
+              </li>
+              <li class="mb-3">
+                <a href="#projects" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
+                    class="projects">Projects</span></a>
+              </li>
+              <li class="mb-3">
+                <a href="#contact" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
+                    class="contact">Contact</span></a>
+              </li>
+            </ul>
+            </nav>
+
+            <div class="space-y-4">
+              <a href="./assets/Curriculum_Vitae_POLU.pdf" target="_blank"
+                class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition flex items-center justify-center">
+                <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                  </path>
+                </svg>
+                <span download>Download CV</span>
+              </a>
+
+              <div class="flex justify-center space-x-4">
+                <!-- GitHub -->
+                <a href="https://github.com/satheeshpolu" target="_blank"
+                  class="text-gray-600 hover:text-indigo-600 transition duration-300 transform hover:scale-110">
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
                 </a>
 
-                <div class="flex justify-center space-x-4">
-                  <!-- GitHub -->
-                  <a
-                    href="https://github.com/satheeshpolu"
-                    target="_blank"
-                    class="text-gray-600 hover:text-indigo-600 transition duration-300 transform hover:scale-110"
-                    >
-                    <svg
-                      class="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
-                      />
-                    </svg>
-                  </a>
-
-                  <!-- LinkedIn -->
-                  <a
-  href="https://www.linkedin.com/in/satheesh-polu/"
-  target="_blank"
-  class="text-gray-600 hover:text-indigo-600 transition duration-300 transform hover:scale-110"
->
-  <svg
-    class="h-6 w-6"
-    fill="currentColor"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-    />
-  </svg>
-</a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/satheesh-polu/" target="_blank"
+                  class="text-gray-600 hover:text-indigo-600 transition duration-300 transform hover:scale-110">
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                </a>
 
 
-                  <!-- Twitter -->
-                  <!-- <a
+                <!-- Twitter -->
+                <!-- <a
                     href="https://twitter.com/yourusername"
                     target="_blank"
                     class="text-gray-600 hover:text-indigo-600 transition"
@@ -826,8 +533,8 @@ My approach is driven by a passion for continuous learning and a desire to apply
                     </svg>
                   </a> -->
 
-                  <!-- Instagram -->
-                  <!-- <a
+                <!-- Instagram -->
+                <!-- <a
                     href="https://instagram.com/yourusername"
                     target="_blank"
                     class="text-gray-600 hover:text-indigo-600 transition"
@@ -843,8 +550,8 @@ My approach is driven by a passion for continuous learning and a desire to apply
                     </svg>
                   </a> -->
 
-                  <!-- Medium -->
-                  <!-- <a
+                <!-- Medium -->
+                <!-- <a
                     href="https://medium.com/@yourusername"
                     target="_blank"
                     class="text-gray-600 hover:text-indigo-600 transition"
@@ -859,583 +566,273 @@ My approach is driven by a passion for continuous learning and a desire to apply
                       />
                     </svg>
                   </a> -->
-                  
-                </div>
-                <div class="w-32 mx-auto p-4 justify-center rounded">
-                  <p id="qrcode" class="mx-auto"></p>
-                </div>
+
+              </div>
+              <div class="w-32 mx-auto p-4 justify-center rounded">
+                <p id="qrcode" class="mx-auto"></p>
               </div>
             </div>
-          </aside>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-gray-800 text-white py-12 relative overflow-hidden">
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-8 md:mb-0">
+          <h3 class="text-2xl font-bold mb-4">Polu</h3>
+          <p class="text-gray-400 max-w-md">
+            Kreativer Entwickler, der sich auf die Entwicklung schöner und funktionaler Web- und Mobil-Erlebnisse
+            konzentriert.
+          </p>
+        </div>
+
+
+      </div>
+
+      <hr class="border-gray-700 my-8" />
+
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400 text-sm">
+          © 2025 Polu. All rights reserved.
+        </p>
+
+        <div class="mt-4 md:mt-0">
+          <ul class="flex space-x-6 text-sm text-gray-400">
+            <li>
+              <a href="#" class="hover:text-white transition">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-white transition">Terms of Service</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
 
-    <footer class="bg-gray-800 text-white py-12 relative overflow-hidden">
-      <div class="container mx-auto px-6 relative z-10">
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="mb-8 md:mb-0">
-            <h3 class="text-2xl font-bold mb-4">Polu</h3>
-            <p class="text-gray-400 max-w-md">
-              Kreativer Entwickler, der sich auf die Entwicklung schöner und funktionaler Web- und Mobil-Erlebnisse konzentriert.
-            </p>
-          </div>
+    <!-- Enhanced Decorative Wave SVG - Positioned at bottom with increased height -->
+    <div class="absolute bottom-0 left-0 w-full h-64 md:h-80">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="w-full h-full" preserveAspectRatio="none">
+        <!-- First wave layer (deepest) -->
+        <path fill="rgba(79, 70, 229, 0.2)"
+          d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
 
-          
-        </div>
+        <!-- Second wave layer (middle) -->
+        <path fill="rgba(99, 102, 241, 0.3)"
+          d="M0,256L48,245.3C96,235,192,213,288,208C384,203,480,213,576,229.3C672,245,768,267,864,272C960,277,1056,267,1152,229.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
 
-        <hr class="border-gray-700 my-8" />
+        <!-- Third wave layer (top) -->
+        <path fill="rgba(129, 140, 248, 0.4)"
+          d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,234.7C672,213,768,171,864,165.3C960,160,1056,192,1152,208C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
 
-        <div class="flex flex-col md:flex-row justify-between items-center">
-          <p class="text-gray-400 text-sm">
-            © 2025 Polu. All rights reserved.
-          </p>
-
-          <div class="mt-4 md:mt-0">
-            <ul class="flex space-x-6 text-sm text-gray-400">
-              <li>
-                <a href="#" class="hover:text-white transition"
-                  >Privacy Policy</a
-                >
-              </li>
-              <li>
-                <a href="#" class="hover:text-white transition"
-                  >Terms of Service</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Enhanced Decorative Wave SVG - Positioned at bottom with increased height -->
-      <div class="absolute bottom-0 left-0 w-full h-64 md:h-80">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          class="w-full h-full"
-          preserveAspectRatio="none"
-        >
-          <!-- First wave layer (deepest) -->
-          <path
-            fill="rgba(79, 70, 229, 0.2)"
-            d="M0,224L48,213.3C96,203,192,181,288,181.3C384,181,480,203,576,224C672,245,768,267,864,250.7C960,235,1056,181,1152,170.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-
-          <!-- Second wave layer (middle) -->
-          <path
-            fill="rgba(99, 102, 241, 0.3)"
-            d="M0,256L48,245.3C96,235,192,213,288,208C384,203,480,213,576,229.3C672,245,768,267,864,272C960,277,1056,267,1152,229.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-
-          <!-- Third wave layer (top) -->
-          <path
-            fill="rgba(129, 140, 248, 0.4)"
-            d="M0,160L48,176C96,192,192,224,288,240C384,256,480,256,576,234.7C672,213,768,171,864,165.3C960,160,1056,192,1152,208C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-          ></path>
-
-          <!-- Google Pixel-style animated shapes -->
-          <g>
-            <!-- Small circles -->
-            <circle cx="200" cy="250" r="4" fill="rgba(255, 255, 255, 0.5)">
-              <animate
-                attributeName="cy"
-                values="250;235;250"
-                dur="3s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.5;0.8;0.5"
-                dur="3s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle cx="350" cy="230" r="3" fill="rgba(255, 255, 255, 0.5)">
-              <animate
-                attributeName="cy"
-                values="230;215;230"
-                dur="2.5s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.5;0.7;0.5"
-                dur="2.5s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle cx="480" cy="245" r="5" fill="rgba(255, 255, 255, 0.5)">
-              <animate
-                attributeName="cy"
-                values="245;225;245"
-                dur="4s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.5;0.9;0.5"
-                dur="4s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle cx="600" cy="235" r="4" fill="rgba(255, 255, 255, 0.5)">
-              <animate
-                attributeName="cy"
-                values="235;220;235"
-                dur="3.2s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.5;0.8;0.5"
-                dur="3.2s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle cx="720" cy="250" r="3" fill="rgba(255, 255, 255, 0.5)">
-              <animate
-                attributeName="cy"
-                values="250;235;250"
-                dur="2.8s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.5;0.7;0.5"
-                dur="2.8s"
-                repeatCount="indefinite"
-              />
-            </circle>
-
-            <!-- Medium circles -->
-            <circle cx="850" cy="240" r="8" fill="rgba(255, 255, 255, 0.4)">
-              <animate
-                attributeName="cy"
-                values="240;220;240"
-                dur="3.5s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.4;0.7;0.4"
-                dur="3.5s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle cx="950" cy="230" r="7" fill="rgba(255, 255, 255, 0.4)">
-              <animate
-                attributeName="cy"
-                values="230;210;230"
-                dur="2.7s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.4;0.6;0.4"
-                dur="2.7s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle cx="1080" cy="245" r="9" fill="rgba(255, 255, 255, 0.4)">
-              <animate
-                attributeName="cy"
-                values="245;225;245"
-                dur="4.2s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.4;0.8;0.4"
-                dur="4.2s"
-                repeatCount="indefinite"
-              />
-            </circle>
-
-            <!-- Large circles -->
-            <circle cx="1200" cy="230" r="12" fill="rgba(255, 255, 255, 0.3)">
-              <animate
-                attributeName="cy"
-                values="230;205;230"
-                dur="5s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.3;0.6;0.3"
-                dur="5s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle cx="1320" cy="250" r="15" fill="rgba(255, 255, 255, 0.3)">
-              <animate
-                attributeName="cy"
-                values="250;225;250"
-                dur="4.5s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.3;0.5;0.3"
-                dur="4.5s"
-                repeatCount="indefinite"
-              />
-            </circle>
-
-            <!-- Small squares (for variety) -->
-            <rect
-              x="280"
-              y="240"
-              width="6"
-              height="6"
-              rx="1"
-              fill="rgba(255, 255, 255, 0.5)"
-              transform="rotate(45, 283, 243)"
-            >
-              <animate
-                attributeName="y"
-                values="240;225;240"
-                dur="3.7s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.5;0.8;0.5"
-                dur="3.7s"
-                repeatCount="indefinite"
-              />
-            </rect>
-            <rect
-              x="650"
-              y="230"
-              width="5"
-              height="5"
-              rx="1"
-              fill="rgba(255, 255, 255, 0.5)"
-              transform="rotate(30, 652.5, 232.5)"
-            >
-              <animate
-                attributeName="y"
-                values="230;215;230"
-                dur="2.9s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.5;0.7;0.5"
-                dur="2.9s"
-                repeatCount="indefinite"
-              />
-            </rect>
-            <rect
-              x="900"
-              y="240"
-              width="8"
-              height="8"
-              rx="1"
-              fill="rgba(255, 255, 255, 0.4)"
-              transform="rotate(15, 904, 244)"
-            >
-              <animate
-                attributeName="y"
-                values="240;220;240"
-                dur="3.3s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.4;0.7;0.4"
-                dur="3.3s"
-                repeatCount="indefinite"
-              />
-            </rect>
-
-            <!-- Small donut shapes -->
-            <circle
-              cx="400"
-              cy="235"
-              r="8"
-              fill="none"
-              stroke="rgba(255, 255, 255, 0.4)"
-              stroke-width="2"
-            >
-              <animate
-                attributeName="cy"
-                values="235;220;235"
-                dur="4.1s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.4;0.7;0.4"
-                dur="4.1s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle
-              cx="780"
-              cy="245"
-              r="6"
-              fill="none"
-              stroke="rgba(255, 255, 255, 0.4)"
-              stroke-width="1.5"
-            >
-              <animate
-                attributeName="cy"
-                values="245;230;245"
-                dur="3.6s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.4;0.6;0.4"
-                dur="3.6s"
-                repeatCount="indefinite"
-              />
-            </circle>
-            <circle
-              cx="1150"
-              cy="235"
-              r="10"
-              fill="none"
-              stroke="rgba(255, 255, 255, 0.4)"
-              stroke-width="2"
-            >
-              <animate
-                attributeName="cy"
-                values="235;215;235"
-                dur="4.8s"
-                repeatCount="indefinite"
-              />
-              <animate
-                attributeName="opacity"
-                values="0.4;0.7;0.4"
-                dur="4.8s"
-                repeatCount="indefinite"
-              />
-            </circle>
-          </g>
-        </svg>
-      </div>
-
-      <!-- Additional Google Pixel-style animated shapes throughout footer -->
-      <div class="absolute inset-0 pointer-events-none">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-          <!-- Top area floating elements -->
-          <circle cx="10%" cy="20%" r="5" fill="#6366F1" opacity="0.3">
-            <animate
-              attributeName="cy"
-              values="20%;25%;20%"
-              dur="4s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.3;0.5;0.3"
-              dur="4s"
-              repeatCount="indefinite"
-            />
+        <!-- Google Pixel-style animated shapes -->
+        <g>
+          <!-- Small circles -->
+          <circle cx="200" cy="250" r="4" fill="rgba(255, 255, 255, 0.5)">
+            <animate attributeName="cy" values="250;235;250" dur="3s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3s" repeatCount="indefinite" />
           </circle>
-          <circle cx="15%" cy="30%" r="8" fill="#8B5CF6" opacity="0.2">
-            <animate
-              attributeName="cy"
-              values="30%;25%;30%"
-              dur="5s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.2;0.4;0.2"
-              dur="5s"
-              repeatCount="indefinite"
-            />
+          <circle cx="350" cy="230" r="3" fill="rgba(255, 255, 255, 0.5)">
+            <animate attributeName="cy" values="230;215;230" dur="2.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2.5s" repeatCount="indefinite" />
           </circle>
-          <rect
-            x="25%"
-            y="15%"
-            width="7"
-            height="7"
-            rx="2"
-            fill="#EC4899"
-            opacity="0.2"
-            transform="rotate(20, 25%, 15%)"
-          >
-            <animate
-              attributeName="y"
-              values="15%;20%;15%"
-              dur="4.5s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.2;0.4;0.2"
-              dur="4.5s"
-              repeatCount="indefinite"
-            />
+          <circle cx="480" cy="245" r="5" fill="rgba(255, 255, 255, 0.5)">
+            <animate attributeName="cy" values="245;225;245" dur="4s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.5;0.9;0.5" dur="4s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="600" cy="235" r="4" fill="rgba(255, 255, 255, 0.5)">
+            <animate attributeName="cy" values="235;220;235" dur="3.2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3.2s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="720" cy="250" r="3" fill="rgba(255, 255, 255, 0.5)">
+            <animate attributeName="cy" values="250;235;250" dur="2.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2.8s" repeatCount="indefinite" />
+          </circle>
+
+          <!-- Medium circles -->
+          <circle cx="850" cy="240" r="8" fill="rgba(255, 255, 255, 0.4)">
+            <animate attributeName="cy" values="240;220;240" dur="3.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3.5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="950" cy="230" r="7" fill="rgba(255, 255, 255, 0.4)">
+            <animate attributeName="cy" values="230;210;230" dur="2.7s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4;0.6;0.4" dur="2.7s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="1080" cy="245" r="9" fill="rgba(255, 255, 255, 0.4)">
+            <animate attributeName="cy" values="245;225;245" dur="4.2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.2s" repeatCount="indefinite" />
+          </circle>
+
+          <!-- Large circles -->
+          <circle cx="1200" cy="230" r="12" fill="rgba(255, 255, 255, 0.3)">
+            <animate attributeName="cy" values="230;205;230" dur="5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.3;0.6;0.3" dur="5s" repeatCount="indefinite" />
+          </circle>
+          <circle cx="1320" cy="250" r="15" fill="rgba(255, 255, 255, 0.3)">
+            <animate attributeName="cy" values="250;225;250" dur="4.5s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.3;0.5;0.3" dur="4.5s" repeatCount="indefinite" />
+          </circle>
+
+          <!-- Small squares (for variety) -->
+          <rect x="280" y="240" width="6" height="6" rx="1" fill="rgba(255, 255, 255, 0.5)"
+            transform="rotate(45, 283, 243)">
+            <animate attributeName="y" values="240;225;240" dur="3.7s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.5;0.8;0.5" dur="3.7s" repeatCount="indefinite" />
+          </rect>
+          <rect x="650" y="230" width="5" height="5" rx="1" fill="rgba(255, 255, 255, 0.5)"
+            transform="rotate(30, 652.5, 232.5)">
+            <animate attributeName="y" values="230;215;230" dur="2.9s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.5;0.7;0.5" dur="2.9s" repeatCount="indefinite" />
+          </rect>
+          <rect x="900" y="240" width="8" height="8" rx="1" fill="rgba(255, 255, 255, 0.4)"
+            transform="rotate(15, 904, 244)">
+            <animate attributeName="y" values="240;220;240" dur="3.3s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3.3s" repeatCount="indefinite" />
           </rect>
 
-          <!-- Middle area floating elements -->
-          <circle
-            cx="30%"
-            cy="40%"
-            r="6"
-            fill="#6366F1"
-            opacity="0.25"
-            stroke="white"
-            stroke-width="1"
-            stroke-opacity="0.3"
-          >
-            <animate
-              attributeName="cy"
-              values="40%;35%;40%"
-              dur="5.5s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.25;0.45;0.25"
-              dur="5.5s"
-              repeatCount="indefinite"
-            />
+          <!-- Small donut shapes -->
+          <circle cx="400" cy="235" r="8" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="2">
+            <animate attributeName="cy" values="235;220;235" dur="4.1s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4.1s" repeatCount="indefinite" />
           </circle>
-          <circle cx="40%" cy="25%" r="4" fill="#14B8A6" opacity="0.2">
-            <animate
-              attributeName="cy"
-              values="25%;30%;25%"
-              dur="3.5s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.2;0.4;0.2"
-              dur="3.5s"
-              repeatCount="indefinite"
-            />
+          <circle cx="780" cy="245" r="6" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="1.5">
+            <animate attributeName="cy" values="245;230;245" dur="3.6s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4;0.6;0.4" dur="3.6s" repeatCount="indefinite" />
           </circle>
-          <rect
-            x="50%"
-            y="35%"
-            width="10"
-            height="10"
-            rx="2"
-            fill="#8B5CF6"
-            opacity="0.15"
-            transform="rotate(45, 50%, 35%)"
-          >
-            <animate
-              attributeName="y"
-              values="35%;30%;35%"
-              dur="4s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.15;0.3;0.15"
-              dur="4s"
-              repeatCount="indefinite"
-            />
-          </rect>
+          <circle cx="1150" cy="235" r="10" fill="none" stroke="rgba(255, 255, 255, 0.4)" stroke-width="2">
+            <animate attributeName="cy" values="235;215;235" dur="4.8s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4.8s" repeatCount="indefinite" />
+          </circle>
+        </g>
+      </svg>
+    </div>
 
-          <!-- Right area floating elements -->
-          <circle cx="60%" cy="20%" r="7" fill="#14B8A6" opacity="0.2">
-            <animate
-              attributeName="cy"
-              values="20%;25%;20%"
-              dur="3.8s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.2;0.4;0.2"
-              dur="3.8s"
-              repeatCount="indefinite"
-            />
-          </circle>
-          <circle cx="75%" cy="30%" r="5" fill="#6366F1" opacity="0.25">
-            <animate
-              attributeName="cy"
-              values="30%;25%;30%"
-              dur="5.2s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.25;0.4;0.25"
-              dur="5.2s"
-              repeatCount="indefinite"
-            />
-          </circle>
-          <rect
-            x="85%"
-            y="25%"
-            width="8"
-            height="8"
-            rx="1"
-            fill="#EC4899"
-            opacity="0.15"
-            transform="rotate(-15, 85%, 25%)"
-          >
-            <animate
-              attributeName="y"
-              values="25%;20%;25%"
-              dur="4.7s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.15;0.3;0.15"
-              dur="4.7s"
-              repeatCount="indefinite"
-            />
-          </rect>
-          <circle
-            cx="90%"
-            cy="40%"
-            r="9"
-            fill="none"
-            stroke="#8B5CF6"
-            stroke-width="2"
-            opacity="0.2"
-          >
-            <animate
-              attributeName="cy"
-              values="40%;35%;40%"
-              dur="5s"
-              repeatCount="indefinite"
-            />
-            <animate
-              attributeName="opacity"
-              values="0.2;0.35;0.2"
-              dur="5s"
-              repeatCount="indefinite"
-            />
-          </circle>
-        </svg>
-      </div>
-    </footer>
+    <!-- Additional Google Pixel-style animated shapes throughout footer -->
+    <div class="absolute inset-0 pointer-events-none">
+      <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <!-- Top area floating elements -->
+        <circle cx="10%" cy="20%" r="5" fill="#6366F1" opacity="0.3">
+          <animate attributeName="cy" values="20%;25%;20%" dur="4s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.3;0.5;0.3" dur="4s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="15%" cy="30%" r="8" fill="#8B5CF6" opacity="0.2">
+          <animate attributeName="cy" values="30%;25%;30%" dur="5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.2;0.4;0.2" dur="5s" repeatCount="indefinite" />
+        </circle>
+        <rect x="25%" y="15%" width="7" height="7" rx="2" fill="#EC4899" opacity="0.2" transform="rotate(20, 25%, 15%)">
+          <animate attributeName="y" values="15%;20%;15%" dur="4.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.2;0.4;0.2" dur="4.5s" repeatCount="indefinite" />
+        </rect>
 
-    <!-- Add this at the top of your body -->
-    <div
-      id="scroll-progress"
-      class="fixed top-0 left-0 h-1 bg-indigo-600 z-40"
-    ></div>
+        <!-- Middle area floating elements -->
+        <circle cx="30%" cy="40%" r="6" fill="#6366F1" opacity="0.25" stroke="white" stroke-width="1"
+          stroke-opacity="0.3">
+          <animate attributeName="cy" values="40%;35%;40%" dur="5.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.25;0.45;0.25" dur="5.5s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="40%" cy="25%" r="4" fill="#14B8A6" opacity="0.2">
+          <animate attributeName="cy" values="25%;30%;25%" dur="3.5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3.5s" repeatCount="indefinite" />
+        </circle>
+        <rect x="50%" y="35%" width="10" height="10" rx="2" fill="#8B5CF6" opacity="0.15"
+          transform="rotate(45, 50%, 35%)">
+          <animate attributeName="y" values="35%;30%;35%" dur="4s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4s" repeatCount="indefinite" />
+        </rect>
 
-    <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
-     <!-- Enable for prod -->
-    <script src="./dist/bundle.js"></script>
+        <!-- Right area floating elements -->
+        <circle cx="60%" cy="20%" r="7" fill="#14B8A6" opacity="0.2">
+          <animate attributeName="cy" values="20%;25%;20%" dur="3.8s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3.8s" repeatCount="indefinite" />
+        </circle>
+        <circle cx="75%" cy="30%" r="5" fill="#6366F1" opacity="0.25">
+          <animate attributeName="cy" values="30%;25%;30%" dur="5.2s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.25;0.4;0.25" dur="5.2s" repeatCount="indefinite" />
+        </circle>
+        <rect x="85%" y="25%" width="8" height="8" rx="1" fill="#EC4899" opacity="0.15"
+          transform="rotate(-15, 85%, 25%)">
+          <animate attributeName="y" values="25%;20%;25%" dur="4.7s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.15;0.3;0.15" dur="4.7s" repeatCount="indefinite" />
+        </rect>
+        <circle cx="90%" cy="40%" r="9" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.2">
+          <animate attributeName="cy" values="40%;35%;40%" dur="5s" repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0.2;0.35;0.2" dur="5s" repeatCount="indefinite" />
+        </circle>
+      </svg>
+    </div>
+  </footer>
 
-    <!-- Enable for local development-->
-    <!-- <script src="./src/index.js"></script>  -->
-    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
-    <script>
-      const qr = new QRCode(document.getElementById("qrcode"), {
-        text: "https://satheeshpolu.github.io/",
-        width: 128,
-        height: 128,
-        colorDark : "#000000",
-        colorLight : "#ffffff",
-        correctLevel : QRCode.CorrectLevel.H
-      });
-    </script>
-  </body>
+  <!-- Add this at the top of your body -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-indigo-600 z-40"></div>
+
+  <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+  <!-- Enable for prod -->
+  <script src="./dist/bundle.js"></script>
+
+  <!-- Enable for local development-->
+  <!-- <script src="./src/index.js"></script>  -->
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script>
+    const qr = new QRCode(document.getElementById("qrcode"), {
+      text: "https://satheeshpolu.github.io/",
+      width: 128,
+      height: 128,
+      colorDark: "#000000",
+      colorLight: "#ffffff",
+      correctLevel: QRCode.CorrectLevel.H
+    });
+  </script>
+
+  <!-- Canvas Confetti via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    function showConfetti() {
+      const end = Date.now() + 3000;
+      const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+
+      (function frame() {
+        if (Date.now() > end) return;
+
+        confetti({
+          particleCount: 2,
+          angle: 60,
+          spread: 55,
+          startVelocity: 60,
+          origin: { x: 0, y: 0.5 },
+          colors: colors,
+        });
+
+        confetti({
+          particleCount: 2,
+          angle: 120,
+          spread: 55,
+          startVelocity: 60,
+          origin: { x: 1, y: 0.5 },
+          colors: colors,
+        });
+
+        requestAnimationFrame(frame);
+      })();
+    };
+    showConfetti();
+    function showSnackbar() {
+      const snackbar = document.getElementById('snackbar');
+      snackbar.classList.remove('opacity-0', 'pointer-events-none');
+      snackbar.classList.add('opacity-100');
+
+      setTimeout(() => {
+        snackbar.classList.add('opacity-0', 'pointer-events-none');
+        snackbar.classList.remove('opacity-100');
+      }, 5000);
+    }
+    showSnackbar();
+  </script>
+
+</body>
+
 </html>
