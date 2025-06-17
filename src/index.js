@@ -68,7 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const resources = {
     de: {
       translation: {
-        download: "Lebenslauf herunterladen",
+        download_cv: "Lebenslauf herunterladen",
+        download_cl: "Anschreiben herunterladen",
         about: "Über mich",
         projects: "Projekte",
         skills: "Fähigkeiten",
@@ -78,7 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     en: {
       translation: {
-        download: "Download CV",
+        download_cv: "Download CV",
+        download_cl: "Download cover letter",
         about: "About",
         projects: "Projects",
         skills: "Skills",
@@ -105,7 +107,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const skillsElement = document.querySelectorAll('.skills');
   const contactElement = document.querySelectorAll('.contact');
   const jobTitleElement = document.querySelector('.job-title');
-  const downloadElement = document.querySelector('span[download]');
+  const downloadElement = document.querySelector('span[download_cv]');
+  const downloadCLElement = document.querySelector('span[download_cl]');
 
   aboutElement.forEach(el => el.setAttribute("data-i18n", "about"))
   projectsElement.forEach(el => el.setAttribute("data-i18n", "projects"))
@@ -113,7 +116,8 @@ document.addEventListener("DOMContentLoaded", function () {
   contactElement.forEach(el => el.setAttribute("data-i18n", "contact"))
 
   if (jobTitleElement) jobTitleElement.setAttribute("data-i18n", "job-title");
-  if (downloadElement) downloadElement.setAttribute("data-i18n", "download");
+  if (downloadElement) downloadElement.setAttribute("data-i18n", "download_cv");
+  if (downloadCLElement) downloadCLElement.setAttribute("data-i18n", "download_cl");
 
   // Update content with translations
   function updateContent() {
