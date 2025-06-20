@@ -31,7 +31,7 @@
         <main class="flex-grow p-6 md:w-3/4">
           <!-- About Me -->
           <section id="about" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6"><span class="about">About Me</span></h2>
+            <h2 class="text-3xl font-bold mb-6"><span class="about">Über mich</span></h2>
             <div class="bg-white p-6 rounded-lg shadow-md" class="about_description">
               <!-- Snackbar Container -->
               <div id="snackbar"
@@ -66,7 +66,7 @@
           </section>
 
           <section id="skills" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6"><span class="skills">Skills</span></h2>
+            <h2 class="text-3xl font-bold mb-6"><span class="skills">Fähigkeiten</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
               <!-- Frontend Skills -->
               <div class="bg-white p-6 rounded-lg shadow-md">
@@ -204,7 +204,7 @@
           </section>
 
           <section id="projects" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6"><span class="projects">Projects</span></h2>
+            <h2 class="text-3xl font-bold mb-6"><span class="projects">Projekte</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
               <!-- Project 1: AI-Enhanced Mobile App -->
               <div
@@ -385,10 +385,39 @@
               </div>
             </div>
           </section>
+          <section>
+            <!-- Modal Background -->
 
+            <div id="pdfModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+              <!-- Modal Content -->
+              <!-- Modal Content Wrapper -->
+              <div
+                class="bg-white rounded-2xl shadow-xl w-full max-w-6xl max-h-6xl mx-auto relative p-6 h-[90vh] flex flex-col"
+                style="height: 95vh;">
+
+                <!-- Close Button -->
+                <button id="closeModalBtn"
+                  class="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-2xl font-bold">
+                  &times;
+                </button>
+
+                <!-- Title -->
+                <h2 class="text-2xl font-semibold mb-4"><span id="pdf_title">CV</span> Preview</h2>
+
+                <!-- PDF Preview Area (fills remaining height) -->
+                <div class="flex-1 overflow-hidden">
+                  <embed src="./assets/CV.pdf" type="application/pdf" id="embed_cv"
+                    class="w-full h-full rounded-lg border border-gray-300" />
+                  <embed src="./assets/CL.pdf" type="application/pdf" id="embed_cl"
+                    class="w-full h-full rounded-lg border border-gray-300 hidden" />
+                </div>
+              </div>
+
+            </div>
+          </section>
           <!-- Contact -->
           <section id="contact" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6"><span class="contact">Contact</span></h2>
+            <h2 class="text-3xl font-bold mb-6"><span class="contact">Kontakt</span></h2>
             <div class="bg-white p-6 rounded-lg shadow-md">
               <p class="text-gray-700 mb-6">
                 Haben Sie ein Projekt im Sinn oder möchten Sie eine mögliche Zusammenarbeit besprechen? Ich würde mich
@@ -467,25 +496,25 @@
             <ul>
               <li class="mb-3">
                 <a href="#about" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
-                    class="about">About Me</span></a>
+                    class="about">Über mich</span></a>
               </li>
               <li class="mb-3">
                 <a href="#skills" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
-                    class="skills">Skills</span></a>
+                    class="skills">Fähigkeiten</span></a>
               </li>
               <li class="mb-3">
                 <a href="#projects" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
-                    class="projects">Projects</span></a>
+                    class="projects">Projekte</span></a>
               </li>
               <li class="mb-3">
                 <a href="#contact" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
-                    class="contact">Contact</span></a>
+                    class="contact">Kontakt</span></a>
               </li>
             </ul>
             </nav>
 
             <div class="space-y-4">
-              <a href="./assets/CV_POLU.pdf" target="_blank"
+              <a href="#" onclick="openModal('cv')"
                 class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition flex items-center justify-center">
                 <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
@@ -493,9 +522,10 @@
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
                   </path>
                 </svg>
-                <span download_cv>Download CV</span>
+                <span download_cv>Lebenslauf ansehen</span>
               </a>
-              <a href="./assets/Cover_Letter_POLU.pdf" target="_blank"
+
+              <a href="#" onclick="openModal('cl')"
                 class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition flex items-center justify-center">
                 <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
@@ -503,7 +533,7 @@
                     d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
                   </path>
                 </svg>
-                <span download_cl>Download Cover Letter</span>
+                <span download_cl>Anschreiben ansehen</span>
               </a>
 
               <div class="flex justify-center space-x-4">
@@ -544,8 +574,8 @@
                   </a> -->
 
                 <!-- Instagram -->
-                <!-- <a
-                    href="https://instagram.com/yourusername"
+                <a
+                    href="https://www.instagram.com/satheesh.polu/"
                     target="_blank"
                     class="text-gray-600 hover:text-indigo-600 transition"
                   >
@@ -558,7 +588,7 @@
                         d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
                       />
                     </svg>
-                  </a> -->
+                  </a>
 
                 <!-- Medium -->
                 <!-- <a
@@ -842,7 +872,47 @@
     }
     showSnackbar();
   </script>
+  <script>
+    const modal = document.getElementById('pdfModal');
+    const openBtn = document.getElementById('openModalBtn');
+    const closeBtn = document.getElementById('closeModalBtn');
 
+    function openModal(type) {
+      const targetCV = document.getElementById('embed_cv');
+      const targetCL = document.getElementById('embed_cl');
+      const pdfTitle = document.getElementById('pdf_title');
+
+      if (type === 'cv') {
+        targetCV.classList.remove('hidden');
+        targetCL.classList.add('hidden');
+      } else {
+        targetCV.classList.add('hidden');
+        targetCL.classList.remove('hidden');
+      }
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      pdfTitle.innerText = type.toUpperCase();
+
+    }
+
+    openBtn?.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    });
+
+    // Optional: Close modal when clicking outside the content
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('flex');
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
 </body>
 
 </html>
