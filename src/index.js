@@ -91,8 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     en: {
       translation: {
-        download_cv: "Download CV",
-        download_cl: "Download cover letter",
+        download_cv: "View CV",
+        download_cl: "View cover letter",
         about: "About",
         projects: "Projects",
         skills: "Skills",
