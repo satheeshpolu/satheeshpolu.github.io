@@ -75,6 +75,18 @@ document.addEventListener("DOMContentLoaded", function () {
         skills: "Fähigkeiten",
         contact: "Kontakt",
         "job-title": "Web/Mobile(Android/IOS) Entwickler",
+        "sentance-1": `Hallo, 👋 mit 12 Jahren Erfahrung in den Bereichen Web, mobile Entwicklung (iOS/Android) und
+                  Backend hatte ich die Gelegenheit, in verschiedenen Phasen des Software Development Life Cycle (SDLC)
+                  zu arbeiten. Von Projekten auf der grünen Wiese bis hin zur Produktentwicklung und dem Refactoring von
+                  Altsystemen habe ich meine Fähigkeiten in einer breiten Palette von Technologien verfeinert und bin
+                  dabei immer bestrebt, der Zeit voraus zu sein.`,
+        "sentance-2": `In meiner Karriere habe ich mich nicht nur auf die technische Entwicklung konzentriert, sondern auch
+                  eng mit funktionsübergreifenden Teams zusammengearbeitet - mit UX-, Backend- und Produktteams, um User
+                  Stories zu erstellen, Stand-up-Meetings zu leiten und Kollegen zu beraten. Ich fühle mich in
+                  dynamischen, schnelllebigen Umgebungen wohl, in denen ich die Verantwortung für Aufgaben übernehmen
+                  und zu den übergeordneten Zielen des Unternehmens beitragen kann, um sicherzustellen, dass wir den
+                  Kunden einen sinnvollen Mehrwert bieten. `,
+        "sentance-3": `Mein Ansatz ist geprägt von der Leidenschaft für kontinuierliches Lernen und dem Wunsch, meine Fähigkeiten zur Lösung komplexer Probleme einzusetzen. Dieses Portfolio spiegelt sowohl meine Arbeit als auch meine Herangehensweise an jedes Projekt wider: lernen, anpassen und effektiv beitragen.`,
       },
     },
     en: {
@@ -86,6 +98,11 @@ document.addEventListener("DOMContentLoaded", function () {
         skills: "Skills",
         contact: "Contact",
         "job-title": "Web/Mobile(Android/IOS) Developer",
+        "sentance-1": `
+          Hi, 👋
+          with 12 years of experience in web, mobile development (iOS/Android) and backend, I've had the opportunity to work in various stages of the Software Development Life Cycle (SDLC). From greenfield projects to product development and refactoring legacy systems, I have honed my skills in a wide range of technologies, always striving to stay ahead of the curve.`,
+        "sentance-2": `In my career, I have not only focused on technical development, but also worked closely with cross-functional teams - with UX, backend and product teams to create user stories, lead stand-up meetings and mentor colleagues. I thrive in a dynamic, fast-paced environments where I can take ownership of tasks and contribute to the overall goals of the business to ensure we deliver meaningful value to customers.`,
+        "sentance-3": `My approach is driven by a passion for continuous learning and a desire to apply my skills to solve complex problems. This portfolio reflects both the work I’ve done and the approach I take to every project: to learn, adapt, and contribute effectively.`,
       },
     },
   };
@@ -102,22 +119,32 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   // Add data-i18n attributes to elements
-  const aboutElement = document.querySelectorAll('.about');
-  const projectsElement = document.querySelectorAll('.projects');
-  const skillsElement = document.querySelectorAll('.skills');
-  const contactElement = document.querySelectorAll('.contact');
-  const jobTitleElement = document.querySelector('.job-title');
-  const downloadElement = document.querySelector('span[download_cv]');
-  const downloadCLElement = document.querySelector('span[download_cl]');
+  const aboutElement = document.querySelectorAll(".about");
+  const projectsElement = document.querySelectorAll(".projects");
+  const skillsElement = document.querySelectorAll(".skills");
+  const contactElement = document.querySelectorAll(".contact");
+  const jobTitleElement = document.querySelector(".job-title");
+  const downloadElement = document.querySelector("span[download_cv]");
+  const downloadCLElement = document.querySelector("span[download_cl]");
+  const downloadSentance1Element = document.querySelector(".sentance-1");
+  const downloadSentance2Element = document.querySelector(".sentance-2");
+  const downloadSentance3Element = document.querySelector(".sentance-3");
 
-  aboutElement.forEach(el => el.setAttribute("data-i18n", "about"))
-  projectsElement.forEach(el => el.setAttribute("data-i18n", "projects"))
-  skillsElement.forEach(el => el.setAttribute("data-i18n", "skills"))
-  contactElement.forEach(el => el.setAttribute("data-i18n", "contact"))
+  aboutElement.forEach((el) => el.setAttribute("data-i18n", "about"));
+  projectsElement.forEach((el) => el.setAttribute("data-i18n", "projects"));
+  skillsElement.forEach((el) => el.setAttribute("data-i18n", "skills"));
+  contactElement.forEach((el) => el.setAttribute("data-i18n", "contact"));
 
   if (jobTitleElement) jobTitleElement.setAttribute("data-i18n", "job-title");
   if (downloadElement) downloadElement.setAttribute("data-i18n", "download_cv");
-  if (downloadCLElement) downloadCLElement.setAttribute("data-i18n", "download_cl");
+  if (downloadCLElement)
+    downloadCLElement.setAttribute("data-i18n", "download_cl");
+  if (downloadSentance1Element)
+    downloadSentance1Element.setAttribute("data-i18n", "sentance-1");
+  if (downloadSentance2Element)
+    downloadSentance2Element.setAttribute("data-i18n", "sentance-2");
+  if (downloadSentance3Element)
+    downloadSentance3Element.setAttribute("data-i18n", "sentance-3");
 
   // Update content with translations
   function updateContent() {
