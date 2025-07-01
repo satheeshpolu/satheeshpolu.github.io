@@ -74,6 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
         projects: "Projekte",
         skills: "Fähigkeiten",
         contact: "Kontakt",
+        otw: "Offen für Arbeit",
         "job-title": "Web/Mobile(Android/IOS) Entwickler",
         "sentance-1": `Hallo, 👋 mit 12 Jahren Erfahrung in den Bereichen Web, mobile Entwicklung (iOS/Android) und
                   Backend hatte ich die Gelegenheit, in verschiedenen Phasen des Software Development Life Cycle (SDLC)
@@ -97,6 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
         projects: "Projects",
         skills: "Skills",
         contact: "Contact",
+        otw: "Open to Work",
         "job-title": "Web/Mobile(Android/IOS) Developer",
         "sentance-1": `
           Hi, 👋
@@ -124,6 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const skillsElement = document.querySelectorAll(".skills");
   const contactElement = document.querySelectorAll(".contact");
   const jobTitleElement = document.querySelector(".job-title");
+  const otw = document.querySelector(".otw");
   const downloadElement = document.querySelector("span[download_cv]");
   const downloadCLElement = document.querySelector("span[download_cl]");
   const downloadSentance1Element = document.querySelector(".sentance-1");
@@ -136,6 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
   contactElement.forEach((el) => el.setAttribute("data-i18n", "contact"));
 
   if (jobTitleElement) jobTitleElement.setAttribute("data-i18n", "job-title");
+  if (otw) otw.setAttribute("data-i18n", "otw");
   if (downloadElement) downloadElement.setAttribute("data-i18n", "download_cv");
   if (downloadCLElement)
     downloadCLElement.setAttribute("data-i18n", "download_cl");
