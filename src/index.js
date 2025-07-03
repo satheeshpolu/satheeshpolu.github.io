@@ -70,6 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
       translation: {
         download_cv: "Lebenslauf herunterladen",
         download_cl: "Anschreiben herunterladen",
+        download_cc: "Zertifikate ansehen",
         about: "Über mich",
         projects: "Projekte",
         skills: "Fähigkeiten",
@@ -94,6 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
       translation: {
         download_cv: "View CV",
         download_cl: "View cover letter",
+        download_cc: "View certificates",
         about: "About",
         projects: "Projects",
         skills: "Skills",
@@ -129,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const otw = document.querySelector(".otw");
   const downloadElement = document.querySelector("span[download_cv]");
   const downloadCLElement = document.querySelector("span[download_cl]");
+  const downloadCCElement = document.querySelector("span[download_cc]");
   const downloadSentance1Element = document.querySelector(".sentance-1");
   const downloadSentance2Element = document.querySelector(".sentance-2");
   const downloadSentance3Element = document.querySelector(".sentance-3");
@@ -143,6 +146,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (downloadElement) downloadElement.setAttribute("data-i18n", "download_cv");
   if (downloadCLElement)
     downloadCLElement.setAttribute("data-i18n", "download_cl");
+  if (downloadCCElement)
+    downloadCCElement.setAttribute("data-i18n", "download_cc");
   if (downloadSentance1Element)
     downloadSentance1Element.setAttribute("data-i18n", "sentance-1");
   if (downloadSentance2Element)
