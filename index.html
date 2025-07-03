@@ -410,6 +410,8 @@
                     class="w-full h-full rounded-lg border border-gray-300" />
                   <embed src="./assets/Cover_Letter_POLU.pdf" type="application/pdf" id="embed_cl"
                     class="w-full h-full rounded-lg border border-gray-300 hidden" />
+                  <embed src="./assets/Certifications_POLU.pdf" type="application/pdf" id="embed_certificate"
+                    class="w-full h-full rounded-lg border border-gray-300 hidden" />
                 </div>
               </div>
 
@@ -534,6 +536,17 @@
                   </path>
                 </svg>
                 <span download_cl>Anschreiben ansehen</span>
+              </a>
+
+              <a href="#" onclick="openModal('certificates')"
+                class="w-full py-2 px-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition flex items-center justify-center">
+                <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                  </path>
+                </svg>
+                <span download_cc>Zertifikate ansehen</span>
               </a>
 
               <div class="flex justify-center space-x-4">
@@ -880,14 +893,21 @@
     function openModal(type) {
       const targetCV = document.getElementById('embed_cv');
       const targetCL = document.getElementById('embed_cl');
+      const embedCertificate = document.getElementById('embed_certificate');
       const pdfTitle = document.getElementById('pdf_title');
 
       if (type === 'cv') {
         targetCV.classList.remove('hidden');
         targetCL.classList.add('hidden');
-      } else {
+        embedCertificate.classList.add('hidden');
+      } else if (type === 'cl') {
         targetCV.classList.add('hidden');
         targetCL.classList.remove('hidden');
+        embedCertificate.classList.add('hidden');
+      } else {
+        targetCV.classList.add('hidden');
+        targetCL.classList.add('hidden');
+        embedCertificate.classList.remove('hidden');
       }
       modal.classList.remove('hidden');
       modal.classList.add('flex');
