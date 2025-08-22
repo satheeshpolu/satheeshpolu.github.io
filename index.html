@@ -565,14 +565,9 @@
                   🙋‍♂️ <span class="otw">Offen für Arbeit</span>
                 </span>
               </div>
-
-
               <h2 class="text-2xl font-bold profile-title">Satheesh Polu</h2>
               <p class="text-gray-600 job-title">Web/Mobile(Android/IOS) Developer</p>
             </div>
-
-
-
             <ul>
               <li class="mb-3">
                 <a href="#about" class="block py-2 px-4 hover:bg-indigo-100 rounded-md transition"><span
@@ -646,24 +641,6 @@
                   </svg>
                 </a>
 
-
-                <!-- Twitter -->
-                <!-- <a
-                    href="https://twitter.com/yourusername"
-                    target="_blank"
-                    class="text-gray-600 hover:text-indigo-600 transition"
-                  >
-                    <svg
-                      class="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
-                      />
-                    </svg>
-                  </a> -->
-
                 <!-- Instagram -->
                 <a href="https://www.instagram.com/satheesh.polu/" target="_blank"
                   class="text-gray-600 hover:text-indigo-600 transition">
@@ -699,6 +676,10 @@
         </aside>
       </div>
     </div>
+    <!-- Move to Top Button -->
+    <button onclick="scrollToTop()" id="toTopBtn" class="move-top-btn">
+      ↑
+    </button>
   </div>
 
   <footer class="bg-gray-800 text-white py-12 relative overflow-hidden">
@@ -928,7 +909,7 @@
     }
     document.getElementById("greeting").innerText = getGreeting();
     let typingText = new Typed("#text", {
-      strings: ['Welcome to my portfolio.', 'My name is Satheesh Polu,', "and I'm from Germany."],
+      strings: ['Welcome to my portfolio!', 'My name is Satheesh Polu,', "and I'm from Germany."],
       loop: true,
       typedSpeed: 100,
       backSpeed: 100,
@@ -1034,6 +1015,40 @@
       );
       observer.observe(el);
     });
+  </script>
+
+  <script>
+    // Get the button
+    const toTopBtn = document.getElementById("toTopBtn");
+    const menuLinks = document.querySelectorAll('ul li a');
+
+    // Show button after scrolling down 200px
+    window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        toTopBtn.style.opacity = "1";
+        toTopBtn.style.visibility = "visible";
+      } else {
+        toTopBtn.style.opacity = "0";
+        toTopBtn.style.visibility = "hidden";
+      }
+    };
+
+    // Scroll to top smoothly
+    function scrollToTop() {
+      menuLinks.forEach(l => l.classList.remove('bg-indigo-100'));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    menuLinks.forEach(link => {
+      link.addEventListener('click', function () {
+        // Remove the bg from all links
+        menuLinks.forEach(l => l.classList.remove('bg-indigo-100'));
+
+        // Add bg to the clicked link
+        this.classList.add('bg-indigo-100');
+      });
+    });
+
   </script>
 </body>
 
