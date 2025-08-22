@@ -29,17 +29,41 @@
       <div class="flex flex-col md:flex-row flex-grow">
         <!-- Content -->
         <main class="flex-grow p-6 md:w-3/4">
+          <section class="banner">
+            <div class="content">
+              <h3>Hey, <span id="greeting"></span>
+              </h3>
+              <h2><span id="text"></span></h2>
+              <!-- Email Button -->
+              <a href="mailto:satheeshpolu99@gmail.com" style="text-decoration: none;">
+                <button class="chat">
+                  <svg data-name="1-Email" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-5 w-5"
+                    fill="rgb(79, 70, 229)">
+                    <path
+                      d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.72 2L16 14.77 3.72 6zM30 25a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23z" />
+                  </svg>
+                  <span>Email me</span>
+                </button>
+              </a>
+
+              <!-- Phone Button -->
+              <a href="tel:+49123456789" style="text-decoration: none;">
+                <button class="chat">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5" fill="rgb(79, 70, 229)">
+                    <path
+                      d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z" />
+                  </svg>
+                  <span>Call me</span>
+                </button>
+              </a>
+            </div>
+          </section>
           <!-- About Me -->
           <section id="about" class="mb-16 h-screen animate-fadeInUp">
             <h2 class="sticky top-0 bg-white z-10 text-3xl font-bold text-center mb-0.5 sticky-positon">
               <span class="about">Über mich</span>
             </h2>
             <div class="bg-white p-6 rounded-lg shadow-md" class="about_description">
-              <!-- Snackbar Container -->
-              <div id="snackbar"
-                class="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-md shadow-lg opacity-0 pointer-events-none transition-opacity duration-300">
-                Vielen Dank für Ihren Besuch! Viel Spaß beim Erkunden meines Portfolios.
-              </div>
 
               <div class="space-y-6">
                 <p class="text-lg sentance-1">
@@ -876,6 +900,7 @@
   <!-- Enable for local development-->
   <!-- <script src="./src/index.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script>
     const qr = new QRCode(document.getElementById("qrcode"), {
       text: "https://satheeshpolu.github.io/",
@@ -884,6 +909,30 @@
       colorDark: "#000000",
       colorLight: "#ffffff",
       correctLevel: QRCode.CorrectLevel.H
+    });
+
+    function getGreeting() {
+      const currentTime = new Date();
+      const currentHour = currentTime.getHours();
+
+      let greeting;
+
+      if (currentHour < 12) {
+        greeting = "Good morning!";
+      } else if (currentHour >= 12 && currentHour < 17) {
+        greeting = "Good afternoon!";
+      } else {
+        greeting = "Good evening!";
+      }
+      return greeting;
+    }
+    document.getElementById("greeting").innerText = getGreeting();
+    let typingText = new Typed("#text", {
+      strings: ['Welcome to my portfolio.', 'My name is Satheesh Polu,', "and I'm from Germany."],
+      loop: true,
+      typedSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100
     });
   </script>
 
@@ -919,17 +968,6 @@
       })();
     };
     showConfetti();
-    function showSnackbar() {
-      const snackbar = document.getElementById('snackbar');
-      snackbar.classList.remove('opacity-0', 'pointer-events-none');
-      snackbar.classList.add('opacity-100');
-
-      setTimeout(() => {
-        snackbar.classList.add('opacity-0', 'pointer-events-none');
-        snackbar.classList.remove('opacity-100');
-      }, 5000);
-    }
-    showSnackbar();
   </script>
   <script>
     const modal = document.getElementById('pdfModal');
@@ -996,8 +1034,6 @@
       );
       observer.observe(el);
     });
-
-
   </script>
 </body>
 
