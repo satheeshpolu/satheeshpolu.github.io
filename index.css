@@ -34,7 +34,6 @@
 
 .sticky-positon {
   line-height: 2.5em;
-  font-family: cursive;
   color: rgb(79 70 229);
 }
 
@@ -366,4 +365,5 @@ Move to top button */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   transition: opacity 0.4s ease, visibility 0.4s ease;
+  font-size: 32px;
 }
