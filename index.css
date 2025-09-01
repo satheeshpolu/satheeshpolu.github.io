@@ -15,6 +15,7 @@
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     visibility: hidden;
@@ -25,6 +26,7 @@
   from {
     transform: scale(1);
   }
+
   to {
     transform: scale(1.1);
   }
@@ -32,7 +34,6 @@
 
 .sticky-positon {
   line-height: 2.5em;
-  font-family: cursive;
   color: rgb(79 70 229);
 }
 
@@ -42,202 +43,252 @@
     opacity: 0;
     transform: translateY(200px);
   }
+
   2% {
     opacity: 0.02;
     transform: translateY(196px);
   }
+
   4% {
     opacity: 0.04;
     transform: translateY(192px);
   }
+
   6% {
     opacity: 0.06;
     transform: translateY(188px);
   }
+
   8% {
     opacity: 0.08;
     transform: translateY(184px);
   }
+
   10% {
     opacity: 0.1;
     transform: translateY(180px);
   }
+
   12% {
     opacity: 0.12;
     transform: translateY(176px);
   }
+
   14% {
     opacity: 0.14;
     transform: translateY(172px);
   }
+
   16% {
     opacity: 0.16;
     transform: translateY(168px);
   }
+
   18% {
     opacity: 0.18;
     transform: translateY(164px);
   }
+
   20% {
     opacity: 0.2;
     transform: translateY(160px);
   }
+
   22% {
     opacity: 0.22;
     transform: translateY(156px);
   }
+
   24% {
     opacity: 0.24;
     transform: translateY(152px);
   }
+
   26% {
     opacity: 0.26;
     transform: translateY(148px);
   }
+
   28% {
     opacity: 0.28;
     transform: translateY(144px);
   }
+
   30% {
     opacity: 0.3;
     transform: translateY(140px);
   }
+
   32% {
     opacity: 0.32;
     transform: translateY(136px);
   }
+
   34% {
     opacity: 0.34;
     transform: translateY(132px);
   }
+
   36% {
     opacity: 0.36;
     transform: translateY(128px);
   }
+
   38% {
     opacity: 0.38;
     transform: translateY(124px);
   }
+
   40% {
     opacity: 0.4;
     transform: translateY(120px);
   }
+
   42% {
     opacity: 0.42;
     transform: translateY(116px);
   }
+
   44% {
     opacity: 0.44;
     transform: translateY(112px);
   }
+
   46% {
     opacity: 0.46;
     transform: translateY(108px);
   }
+
   48% {
     opacity: 0.48;
     transform: translateY(104px);
   }
+
   50% {
     opacity: 0.5;
     transform: translateY(100px);
   }
+
   52% {
     opacity: 0.52;
     transform: translateY(96px);
   }
+
   54% {
     opacity: 0.54;
     transform: translateY(92px);
   }
+
   56% {
     opacity: 0.56;
     transform: translateY(88px);
   }
+
   58% {
     opacity: 0.58;
     transform: translateY(84px);
   }
+
   60% {
     opacity: 0.6;
     transform: translateY(80px);
   }
+
   62% {
     opacity: 0.62;
     transform: translateY(76px);
   }
+
   64% {
     opacity: 0.64;
     transform: translateY(72px);
   }
+
   66% {
     opacity: 0.66;
     transform: translateY(68px);
   }
+
   68% {
     opacity: 0.68;
     transform: translateY(64px);
   }
+
   70% {
     opacity: 0.7;
     transform: translateY(60px);
   }
+
   72% {
     opacity: 0.72;
     transform: translateY(56px);
   }
+
   74% {
     opacity: 0.74;
     transform: translateY(52px);
   }
+
   76% {
     opacity: 0.76;
     transform: translateY(48px);
   }
+
   78% {
     opacity: 0.78;
     transform: translateY(44px);
   }
+
   80% {
     opacity: 0.8;
     transform: translateY(40px);
   }
+
   82% {
     opacity: 0.82;
     transform: translateY(36px);
   }
+
   84% {
     opacity: 0.84;
     transform: translateY(32px);
   }
+
   86% {
     opacity: 0.86;
     transform: translateY(28px);
   }
+
   88% {
     opacity: 0.88;
     transform: translateY(24px);
   }
+
   90% {
     opacity: 0.9;
     transform: translateY(20px);
   }
+
   92% {
     opacity: 0.92;
     transform: translateY(16px);
   }
+
   94% {
     opacity: 0.94;
     transform: translateY(12px);
   }
+
   96% {
     opacity: 0.96;
     transform: translateY(8px);
   }
+
   98% {
     opacity: 0.98;
     transform: translateY(4px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -247,4 +298,72 @@
 
 .animate-fadeInUpSmooth {
   animation: fadeInUpSmooth 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/*
+Typed text
+*/
+.content {
+  /* position: relative;
+  z-index: 10; */
+  font-family: monospace;
+}
+
+.content h3 {
+  font-size: 2em;
+  color: #989aa2;
+  font-weight: 200;
+  transition: 0.5s;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px;
+  /* background: #fff; */
+  transition: 0.5s;
+}
+
+.content h2 {
+  font-size: 4em;
+  font-weight: 200;
+  transition: 0.5s;
+}
+
+.content h2 span {
+  color: rgb(79, 70, 229);
+}
+
+.chat {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1.25em;
+}
+
+/*
+Move to top button */
+.move-top-btn {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(79, 70, 229);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  font-size: 32px;
 }
