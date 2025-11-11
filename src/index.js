@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
         skills: "Fähigkeiten",
         contact: "Kontakt",
         otw: "Offen für Arbeit",
-        "job-title": "Web/Mobile(Android/IOS) Entwickler",
+        "job-title": "Frontend/Backend Entwickler",
         "sentance-1": `Hallo, 👋 mit 12 Jahren Erfahrung in den Bereichen Web, mobile Entwicklung (iOS/Android) und
                   Backend hatte ich die Gelegenheit, in verschiedenen Phasen des Software Development Life Cycle (SDLC)
                   zu arbeiten. Von Projekten auf der grünen Wiese bis hin zur Produktentwicklung und dem Refactoring von
@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
         skills: "Skills",
         contact: "Contact",
         otw: "Open to Work",
-        "job-title": "Web/Mobile(Android/IOS) Developer",
+        "job-title": "Frontend/Backend Developer",
         "sentance-1": `
           Hi, 👋
           with 12 years of experience in web, mobile development (iOS/Android) and backend, I've had the opportunity to work in various stages of the Software Development Life Cycle (SDLC). From greenfield projects to product development and refactoring legacy systems, I have honed my skills in a wide range of technologies, always striving to stay ahead of the curve.`,
